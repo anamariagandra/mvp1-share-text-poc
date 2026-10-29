@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f1eb">
+    <meta name="description" content="Prova de conceito para receber texto compartilhado no Android.">
+    <title>Receber texto compartilhado</title>
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./icons/app.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="card">
+      <p class="eyebrow">Prova de conceito</p>
+      <h1>Texto recebido</h1>
+      <p id="status" class="status" role="status" aria-live="polite">Aguardando conteúdo compartilhado.</p>
+      <pre id="shared-text" class="shared-text" tabindex="0" aria-label="Texto compartilhado"></pre>
+      <button id="clear-button" type="button" hidden>Limpar texto</button>
+      <p class="hint">No Android, use o menu Compartilhar de uma mensagem de texto e escolha esta aplicação.</p>
+      <p class="unsupported">Esta POC recebe texto. Áudio, imagens e outros conteúdos não são processados.</p>
+    </main>
+  </body>
+</html>
